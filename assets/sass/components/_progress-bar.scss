@@ -1,0 +1,40 @@
+/************************************
+	progress bar
+**********************************/
+.skills > .skill + .skill {
+	margin-top: 30px;
+}
+
+.skill h6 {
+	font-size: 14px;
+	font-size: calc-rem-value(14);
+	margin: 0 0 0.66em;
+	text-transform: uppercase;
+}
+
+.progress {
+	background-color: #d6dce2;
+	height: 10px;
+	margin: 0;
+	box-shadow: none;
+	overflow: visible;
+	border-radius: 15px;
+}
+
+.progress-bar {
+	background-color: $theme-primary-color;
+	position: relative;
+	border-radius: 15px;
+
+	span {
+		font-family: $heading-font;
+		text-align: center;
+		font-size: 14px;
+		font-size: calc-rem-value(14);
+		font-weight: bold;
+		color: $heading-color;
+		position: absolute;
+		top: -25px;
+		right: 0;
+	}
+}

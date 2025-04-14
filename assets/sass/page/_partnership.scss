@@ -1,0 +1,64 @@
+/*--------------------------------------------------------------
+	#partnership page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#5.1	partnership-section
+--------------------------------------------------------------*/
+.partnership-section {
+	padding-bottom: 75px;
+
+	@include media-query(991px) {
+		padding-bottom: 65px;
+	}
+
+	@include media-query(767px) {
+		padding-bottom: 55px;
+	}
+
+	.partnership-text h2 {
+		font-size: 30px;
+		font-size: calc-rem-value(30);
+		line-height: 1.17em;
+		margin: -5px 0 0.67em;
+
+		@include media-query(991px) {
+			font-size: 25px;
+			font-size: calc-rem-value(25);
+		}
+
+		@include media-query(767px) {
+			font-size: 22px;
+			font-size: calc-rem-value(22);
+		}
+	}
+
+	.partnership-text p {
+		margin-bottom: 2em;
+	}
+
+	.partner-grids {
+		overflow: hidden;
+		margin: 0 -12.5px;
+		margin-top: 35px;
+
+		.grid {
+			width: calc(25% - 25px);
+			float: left;
+			margin: 0 12.5px 25px;
+			border: 1px solid #e4e4e4;
+			padding: 15px 10px;
+
+			@include media-query(1199px) {
+				padding: 0;
+			}
+
+			@include media-query(767px) {
+				width: calc(33.33% - 25px);
+			}
+
+			@include media-query(420px) {
+				width: calc(50% - 25px);
+			}
+		}
+	}
+}

@@ -1,0 +1,106 @@
+/*--------------------------------------------------------------
+	#service single page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#12.1	service-single-content	
+--------------------------------------------------------------*/
+.service-single-content {
+
+	/*** service-details ***/
+	.service-details h2 {
+		font-size: 30px;
+		font-size: calc_rem_value(30);
+		line-height: 0.8em;
+		margin: 0 0 1.25em;
+
+		@include media-query(767px) {
+			font-size: 26px;
+			font-size: calc_rem_value(26);
+		}		
+	}
+
+	.service-details p {
+		margin: 0 0 30px;
+	}
+
+	.service-details ul {
+		list-style: none;
+	}
+
+	.service-details ul li {
+		margin-bottom: 12px;
+		color: $text-color;
+	}
+
+	.service-details ul li:last-child {
+		margin-bottom: 0;
+	}
+
+	.service-details ul i {
+		display: inline-block;
+		padding-right: 5px;
+	}
+
+	.img-holder {
+		margin-top: 55px;
+	}
+
+	/*** service single tab ***/
+	.service-single-tab {
+		margin-top: 60px;
+
+		@include media-query(767px) {
+			margin-top: 40px;
+		}
+	}
+
+	.service-single-tab .nav {
+		overflow: hidden;
+
+		li {
+			float: left;
+		}
+
+		> li + li {
+			margin-left: 5px;
+		}
+
+		a {
+			font-family: $heading-font;
+			background-color: #f1f1f1;
+			font-size: 16px;
+			font-size: calc_rem_value(16);
+			font-weight: 600;
+			color: #86909e;
+			padding: 10px 45px;
+
+			@include media-query(767px) {
+				font-size: 13px;
+				font-size: calc_rem_value(13);
+				padding: 8px 12px;
+			}
+		}
+
+		.active a,
+		a:hover {
+			background: $theme-primary-color;
+			color: $white;
+		}
+	}
+
+	.tab-content {
+		padding-top: 25px;
+
+		.tab-pane p {
+			margin-bottom: 20px;
+
+			@include media-query(767px) {
+				margin-bottom: 15px;
+			}
+		}
+
+		.tab-pane p:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

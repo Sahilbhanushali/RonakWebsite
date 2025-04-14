@@ -1,0 +1,180 @@
+/******************************************
+	about sidebar
+*******************************************/
+.about-sidebar {
+	max-width: 370px;
+	margin-top: -157px;
+
+	@include media-query(1199px) {
+		width: 320px;
+		float: right;
+		margin-top: 50px;
+	}
+
+	@include media-query(991px) {
+		float: none;
+		margin-bottom: 60px;
+	}
+
+	@include media-query(767px) {
+		width: 300px;
+	}
+
+	> .widget + .widget {
+		margin-top: 60px;
+	}
+
+
+	/*** about-link-widget ***/
+	.about-link-widget {
+		box-shadow: -1px 5px 25px 3px transparentize(#ababab, 0.8);
+	}
+
+	.about-link-widget h3 {
+		font-size: 20px;
+		font-size: calc-rem-value(20);
+		margin: 0;
+
+		@include media-query(1199px) {
+			font-size: 17px;
+			font-size: calc-rem-value(17);
+		}
+
+		@include media-query(767px) {
+			font-size: 15px;
+			font-size: calc-rem-value(15);
+		}
+	}
+
+	.about-link-widget h3 a {
+		background-color: $theme-primary-color;
+		color: $white;
+		padding: 18px 34px;
+		display: block;
+		position: relative;
+
+		@include media-query(1199px) {
+			padding: 17px 25px;
+		}
+
+		@include media-query(767px) {
+			padding: 14px 20px;
+		}
+
+		i {
+			position: absolute;
+			right: 34px;
+			top: 50%;
+			@include translatingY();
+
+			@include media-query(1199px) {
+				right: 25px;
+			}
+
+			@include media-query(767px) {
+				right: 20px;
+			}
+		}
+	}
+
+	.about-link-widget ul {
+		font-family: $heading-font;
+		padding: 25px 45px;
+
+		@include media-query(1199px) {
+			padding: 15px 35px;
+		}
+
+		@include media-query(767px) {
+			padding: 15px 20px;
+		}
+
+		> li + li {
+			border-top: 1px solid #dde0e7;
+		}
+
+		li a {
+			font-size: 16px;
+			font-size: calc-rem-value(16);
+			color: $text-color;
+			padding: 12px 0;
+			display: block;
+
+			@include media-query(1199px) {
+				font-size: 15px;
+				font-size: calc-rem-value(15);
+				padding: 10px 0;
+			}
+
+			@include media-query(767px) {
+				font-size: 14px;
+				font-size: calc-rem-value(14);
+				padding: 8px 0;
+			}
+		}
+
+		.current a,
+		a:hover {
+			color: $black;
+		}
+	}
+
+	/*** carrer-widget ***/
+	.carrer-widget {
+		@include background-style("../images/carrer-widget-bg.jpg", center center, cover, no-repeat, local);
+		position: relative;
+		padding: 100px 35px;
+
+		@include media-query(767px) {
+			padding: 50px 25px;
+		}
+
+		&:before {
+			content: "";
+			@include overlay(transparentize($black, 0.2));
+		}
+
+		.content {
+			position: relative;
+			z-index: 10;
+		}
+
+		.join-message {
+			font-family: $heading-font;
+			font-size: 18px;
+			font-size: calc-rem-value(18);
+			font-weight: bold;
+			color: $theme-primary-color;
+		}
+
+		h3 {
+			font-size: 20px;
+			font-size: calc-rem-value(20);
+			line-height: 1.25em;
+			color: $white;
+			margin: 0.75em 0 1.3em;
+		}
+
+		p {
+			margin-bottom: 3em;
+		}
+
+		.career-link {
+			font-family: $heading-font;
+			background-color: $theme-primary-color;
+			font-size: 16px;
+			font-size: calc-rem-value(16);
+			font-weight: bold;
+			color: $white;
+			padding: 9px 15px;
+			text-align: center;
+			display: block;
+		}
+
+		.career-link:hover {
+			background-color: darken($theme-primary-color, 10%);
+		}
+
+	}
+
+}

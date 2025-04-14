@@ -1,0 +1,23 @@
+/*--------------------------------------------------------------
+	#Services page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#11.1	services-pg-section
+--------------------------------------------------------------*/
+.services-pg-section {
+	@extend .services-section-s2;
+
+	padding-bottom: 45px;
+
+	@include media-query(991px) {
+		padding-bottom: 35px;
+	}
+
+	@include media-query(767px) {
+		padding-bottom: 25px;
+	}
+
+	.service-grids .grid {
+		margin: 0 15px 50px;
+	}
+}

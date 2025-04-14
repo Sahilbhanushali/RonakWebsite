@@ -1,0 +1,32 @@
+/*--------------------------------------------------------------
+	#faq page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#8.1	faq-pg-section
+--------------------------------------------------------------*/
+.faq-pg-section {
+	@include media-query(991px) {
+		padding-bottom: 30px;
+	}
+
+	@include media-query(767px) {
+		padding-bottom: 20px;
+	}
+
+	.faq-wrapper h2 {
+		font-size: 36px;
+		font-size: calc-rem-value(36);
+		line-height: 1.17em;
+		margin: -0.19em 0 0.83em;
+
+		@include media-query(991px) {
+			font-size: 30px;
+			font-size: calc-rem-value(30);
+		}
+
+		@include media-query(767px) {
+			font-size: 25px;
+			font-size: calc-rem-value(25);
+		}
+	}
+}

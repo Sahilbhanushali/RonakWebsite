@@ -1,0 +1,113 @@
+.theme-btn {
+	font-family: $heading-font;
+	background-color: $theme-primary-color;
+	font-size: 18px;
+	font-size: calc-rem-value(18);
+	font-weight: 600;
+	color: $white;
+	padding: 12px 30px;
+	border: 0;
+	border-radius: 2px;
+	display: inline-block;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: darken($theme-primary-color, 5%);
+		color: $white;
+	}
+
+	@include media-query(991px) {
+		font-size: 16px;
+		font-size: calc-rem-value(16);
+		padding: 10px 25px;
+	}
+
+	@include media-query(767px) {
+		font-size: 15px;
+		font-size: calc-rem-value(15);
+		padding: 9px 25px;
+	}
+}
+
+.theme-btn-s2 {
+	@extend .theme-btn;
+	
+	background-color: $white;
+	font-size: 16px;
+	font-size: calc-rem-value(16);
+	color: $theme-primary-color;
+	padding: 10px 25px;
+	border-radius: 0;
+	box-shadow: 1px 8px 11px 1px transparentize(#ababab, 0.7);
+
+	@include media-query(991px) {
+		font-size: 15px;
+		font-size: calc-rem-value(15);
+		padding: 9px 22px;
+	}
+
+	@include media-query(767px) {
+		font-size: 14px;
+		font-size: calc-rem-value(14);
+		padding: 8px 22px;
+	}
+}
+
+.theme-btn-s3 {
+	@extend .theme-btn-s2;
+	background-color: $theme-primary-color;
+	color: $white;
+	box-shadow: none;
+}
+
+.theme-btn-s4 {
+	font-family: $heading-font;
+	background-color: $white;
+	font-size: 16px;
+	font-size: calc-rem-value(16);
+	font-weight: 600;
+	color: $theme-primary-color;
+	border: 1px solid $theme-primary-color;
+	padding: 10px 30px;
+	display: inline-block;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: $theme-primary-color;
+		color: $white;
+	}
+
+	@include media-query(991px) {
+		font-size: 14px;
+		font-size: calc-rem-value(14);
+		padding: 9px 25px;
+	}
+
+	@include media-query(767px) {
+		padding: 8px 22px;
+	}
+}
+
+.theme-btn-s5 {
+	@extend .theme-btn;
+
+	font-weight: bold;
+	font-size: 16px;
+	font-size: calc-rem-value(16);
+	padding: 9px 30px;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: darken($theme-primary-color, 5%);
+		color: $white;
+	}
+
+	@include media-query(991px) {
+		font-size: 14px;
+		font-size: calc-rem-value(14);
+		padding: 7px 25px;
+	}
+}

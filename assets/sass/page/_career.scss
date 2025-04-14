@@ -1,0 +1,297 @@
+/*--------------------------------------------------------------
+	#carrer page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#7.1	career-section
+--------------------------------------------------------------*/
+.career-section {
+	padding-bottom: 40px;
+
+	@include media-query(991px) {
+		padding-bottom: 30px;
+	}
+
+	@include media-query(767px) {
+		padding-bottom: 20px;
+	}
+
+	.urget-post {
+		max-width: 670px;
+		background-color: #f3f5fa;
+		padding: 50px 60px;
+		position: relative;
+
+		@include media-query(991px) {
+			padding: 35px 40px;
+		}
+
+		@include media-query(767px) {
+			padding: 35px 25px;
+		}
+
+		h3 {
+			font-size: 24px;
+			font-size: calc-rem-value(24);
+			margin: 0 0 0.25em;
+
+			@include media-query(991px) {
+				font-size: 22px;
+				font-size: calc-rem-value(22);
+			}
+
+			@include media-query(767px) {
+				font-size: 20px;
+				font-size: calc-rem-value(20);
+			}
+		}
+
+		.post {
+			font-size: 14px;
+			font-size: calc-rem-value(14);
+			color: #999999;
+			font-weight: 500;
+			display: block;
+			margin-bottom: 15px;
+		}
+
+		p {
+			margin-bottom: 2em;
+		}
+
+		.tag {
+			@include background-style("../images/urgent-job-tag-bg.png", center center, cover, no-repeat, local);
+			width: 105px;
+			height: 33px;
+			font-size: 14px;
+			font-size: calc-rem-value(14);
+		    font-weight: 500;
+		    color: white;
+		    text-transform: uppercase;
+		    padding: 4px 0 0 8px;
+			position: absolute;
+			right: -33px;
+			top: 18px;
+
+			@include media-query(767px) {
+				background: #1855f0;
+				width: auto;
+				height: auto;
+				right: 0;
+				top: 0;
+				padding: 4px 8px;
+			}
+		}
+	}
+
+	.all-job-post {
+		margin-top: 65px;
+
+		@include media-query(991px) {
+			margin-top: 15px;
+		}
+
+		@include media-query(767px) {
+			margin-top: 0;
+		}
+
+
+		> .col {
+			margin-bottom: 60px;
+		}
+
+		h3 {
+			font-size: 24px;
+			font-size: calc-rem-value(24);
+			margin: 0 0 0.25em;
+
+			@include media-query(991px) {
+				font-size: 22px;
+				font-size: calc-rem-value(22);
+			}
+
+			@include media-query(767px) {
+				font-size: 20px;
+				font-size: calc-rem-value(20);
+			}
+		}
+
+		.post {
+			font-size: 14px;
+			font-size: calc-rem-value(14);
+			color: #999999;
+			font-weight: 500;
+			display: block;
+			margin-bottom: 15px;
+		}
+
+		p {
+			margin-bottom: 2em;
+		}
+	}
+}
+
+
+/*--------------------------------------------------------------
+#7.2	job-apply-section
+--------------------------------------------------------------*/
+.job-apply-section {
+	border-top: 1px solid #d9d9d9;
+	padding: 70px 0 55px;
+
+	@include media-query(991px) {
+		padding: 70px 0 45px;
+	}
+
+	h2 {
+		font-size: 30px;
+		font-size: calc-rem-value(30);
+		line-height: 1.2em;
+		margin: 0;
+
+		@include media-query(991px) {
+			font-size: 25px;
+			font-size: calc-rem-value(25);
+		}
+
+		@include media-query(767px) {
+			font-size: 22px;
+			font-size: calc-rem-value(22);
+			margin: 0 0 0.4em;
+		}
+	}
+
+	.job-form {
+		margin-top: 42px;
+
+		@include media-query(767px) {
+			margin-top: 30px;
+		}
+
+		.col {
+			margin-bottom: 45px;
+
+			@include media-query(991px) {
+				margin-bottom: 35px;
+			}
+		}
+
+		input {
+			height: 50px;
+			font-size: 16px;
+			font-size: calc-rem-value(16);
+			padding: 6px 20px;
+			border: 1px solid #7f7f7f;
+			box-shadow: none;
+
+			@include media-query(991px) {
+				height: 40px;
+				font-size: 15px;
+				font-size: calc-rem-value(15);
+				padding: 6px 15px;
+			}
+		}
+
+		div {
+			position: relative;
+
+			i {
+				font-size: 18px;
+				font-size: calc-rem-value(18);
+				color: #e75312;
+				position: absolute;
+				right: 25px;
+				top: 50%;
+				@include translatingY();
+
+				@include media-query(991px) {
+					font-size: 16px;
+					font-size: calc-rem-value(16);
+					right: 20px;
+				}
+			}
+		}
+
+		.inputfile + label {
+			background: white;
+		    width: 100%;
+		    height: 50px;
+		    line-height: 50px;
+		    padding-left: 25px;
+		    font-weight: normal;
+		    color: #666;
+		    border: 1px solid #7f7f7f;
+		    border-radius: 5px;
+		    cursor: pointer;
+			display: inline-block;
+		    position: absolute;
+		    left: 0;
+		    top: 0;
+		    z-index: 100;
+
+		    @include media-query(991px) {
+				height: 40px;
+		    	line-height: 40px;
+		    	padding-left: 20px;
+			}
+		}
+
+		@include placeholder-style(#666, 16, normal);
+
+		.terms {
+			text-align: center;
+			font-size: 16px;
+			font-size: calc-rem-value(16);
+			color: #666666;
+
+			label {
+				font-weight: normal;
+				margin: 0;
+			    position: relative;
+			    top: -2px;
+			    left: 5px;
+			}
+
+			input {
+				height: auto;
+			}
+
+			a {
+				color: $theme-primary-color;
+				text-decoration: underline;
+			}
+		}
+
+		.submit-btn-holder {
+			marign-bottom: 0;
+
+			button {
+				font-family: $heading-font;
+				background-color: $theme-primary-color;
+				width: 100%;
+				height: 50px;
+				font-size: 16px;
+				font-size: calc-rem-value(16);
+				font-weight: bold;
+				color: $white;
+				border: 0;
+				outline: 0;
+				border-radius: 5px;
+				@include transition-time(0.3s);
+
+				@include media-query(991px) {
+					height: 40px;
+					font-size: 15px;
+					font-size: calc-rem-value(15);
+				}
+			}
+
+			button:hover {
+				background-color: darken($theme-primary-color, 10%);
+			}
+		}
+
+		.linkedin-profile i {
+			color: #4899ec;
+		}
+	}
+}

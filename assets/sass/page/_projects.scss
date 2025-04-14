@@ -1,0 +1,18 @@
+/*--------------------------------------------------------------
+	#Projects page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#10.1	projects-pg-projects-section
+--------------------------------------------------------------*/
+.projects-pg-projects-section {
+	@extend .projects-section;
+	padding-bottom: 70px;
+
+	@include media-query(991px) {
+		padding-bottom: 60px;
+	}
+
+	@include media-query(767px) {
+		padding-bottom: 50px;
+	}
+}

@@ -1,0 +1,172 @@
+.theme-accordion-s1 {
+	margin-bottom: 0;
+
+	.panel-default {
+		background: transparent;
+		border: 1px solid #dee0e1;
+		border-radius: 0;
+	}
+
+	.panel-group .panel+.panel {
+	    margin-top: 8px;
+	}
+
+	.panel-heading {
+		background-color: transparent;
+		padding: 0;
+		border-radius: 0;
+	}
+
+	.panel-heading a {
+		background-color: $theme-primary-color;
+		font-family: $heading-font;
+		font-size: 16px;
+		font-size: calc-rem-value(16);
+		font-weight: 600;
+		color: $white;
+		display: block;
+		padding: 12px 25px;
+		position: relative;
+
+		@include media-query(991px) {
+			padding: 12px 20px;
+        }
+
+		@include media-query(767px) {
+			padding: 12px 15px;
+        }
+
+		&:before {
+			font-family: "FontAwesome";
+			content: "\f107";
+			font-size: 20px;
+			font-size: calc-rem-value(20);
+			position: absolute;
+			right: 25px;
+			-webkit-transform: rotate(180deg);
+			transform: rotate(180deg);
+			@include transition-time(0.3s);
+
+			@include media-query(991px) {
+				font-size: 18px;
+				font-size: calc-rem-value(18);
+				right: 20px;
+	        }
+		}
+	}
+
+	.panel-heading .collapsed {
+		// background-color: $white;
+		// color: #222;
+	}
+
+	.panel-heading .collapsed:before {
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+	}
+
+	.panel-heading+.panel-collapse>.panel-body {
+		background: transparentize($white, 0.1);
+		border: 0;
+		padding: 24px 33px 12px;
+
+		@include media-query(1800px) {
+			background-color: $white;
+		}
+
+		@include media-query(991px) {
+			padding: 20px 20px 10px;
+		}
+
+		@include media-query(767px) {
+			padding: 15px 15px 8px;
+		}
+	}
+}
+
+.theme-accordion-s2 {
+	@extend .theme-accordion-s1;
+
+	.panel-default {
+		border: 0;
+		position: relative;
+	}
+
+	.panel-heading a {
+		background-color: $white;
+		font-family: $heading-font;
+		color: $theme-primary-color;
+		display: block;
+		padding: 12px 25px;
+		border: 1px solid #dde2e8;
+		position: relative;
+
+		@include media-query(991px) {
+			padding: 12px 20px;
+        }
+
+		@include media-query(767px) {
+			padding: 12px 15px;
+        }
+
+        .icon {
+			background: $theme-primary-color;
+			width: 47px;
+			height: 47px;
+			line-height: 47px;
+			color: $white;
+			font-size: 20px;
+			font-size: calc-rem-value(20);
+			position: absolute;
+			right: 0;
+			top: 0;
+			text-align: center;
+
+			@include media-query(767px) {
+				display: none;
+			}
+
+			&:before {
+				font-family: "FontAwesome";
+				content: "\f106";
+				-webkit-transform: rotate(180deg);
+				transform: rotate(180deg);
+				@include transition-time(0.3s);
+			}
+        }
+
+		&:before {
+			display: none;
+		}
+	}
+
+	.panel-heading .collapsed {
+		color: #1e2331;
+	}
+
+	.panel-heading .collapsed .icon:before {
+		content: "\f107";
+	}
+
+	.panel-heading+.panel-collapse>.panel-body {
+		padding-left: 130px;
+		min-height: 135px;
+		position: relative;
+
+		@include media-query(767px) {
+			padding-left: 15px;
+			min-height: auto;
+		}
+
+		.img-holder {
+			position: absolute;
+			left: 0;
+			top: 30px;
+
+			@include media-query(767px) {
+				position: static;
+				margin-bottom: 15px;
+			}
+		}
+	}
+}
