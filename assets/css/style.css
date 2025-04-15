@@ -3968,15 +3968,14 @@ img {
   color: #067219;
 }
 
-.services-section .grid:hover {
-  background: url("../images/service-grid-bg.jpg") center center/cover no-repeat
-    local;
-}
+/* .services-section .grid:hover {
+  background: url("../images/about-1.jpg") center center/cover no-repeat local;
+} */
 
-.services-section .grid:hover h3,
+/* .services-section .grid:hover h3,
 .services-section .grid:hover p {
   color: #fff;
-}
+} */
 
 /*--------------------------------------------------------------
 #0.7	about-section
