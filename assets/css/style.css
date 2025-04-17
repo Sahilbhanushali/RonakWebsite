@@ -137,6 +137,7 @@ URL:            http://themeforest.net/user/themexriver
 	Fonts
 ----------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Hind:400,500|Nunito:400,600,700");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /*--------------------------------------------------------------
 #0.1    Theme Reset Style
 --------------------------------------------------------------*/
@@ -145,7 +146,8 @@ html {
 }
 
 body {
-  font-family: "Hind", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
   background-color: #fff;
   font-size: 15px;
   font-size: 1rem;
@@ -2482,7 +2484,6 @@ img {
 .header-style-1 .topbar,
 .header-style-2 .topbar {
   background-color: #004f87;
-  padding: 34px 0;
 }
 
 @media (max-width: 767px) {
@@ -2507,6 +2508,13 @@ img {
 }
 
 @media (max-width: 767px) {
+  .header-style-1 .topbar .site-logo img {
+    height: 15vh;
+    margin-top: -10px;
+  }
+  .header-style-1 .topbar .site-logo {
+    height: 10vh;
+  }
   .header-style-1 .topbar .contact-info,
   .header-style-2 .topbar .contact-info {
     float: none;
@@ -2514,6 +2522,7 @@ img {
     margin: 0 auto;
     text-align: left;
     margin-top: 30px;
+    display: none;
   }
 }
 
@@ -2666,8 +2675,8 @@ img {
 
 .header-style-1 .search-social ul a,
 .header-style-2 .search-social ul a {
-  font-size: 16px;
-  font-size: 1.06667rem;
+  font-size: 24px;
+  font-size: 1.5rem;
   color: #1e2331;
 }
 
