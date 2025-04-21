@@ -36,13 +36,13 @@ try {
     $mail->Port = 587;
     
     // SSL/TLS options (temporary fix - see note below)
-    $mail->SMTPOptions = array(
-        'ssl' => array(
-            'verify_peer' => false,
-            'verify_peer_name' => false,
-            'allow_self_signed' => true
-        )
-    );
+    // $mail->SMTPOptions = array(
+    //     'ssl' => array(
+    //         'verify_peer' => false,
+    //         'verify_peer_name' => false,
+    //         'allow_self_signed' => true
+    //     )
+    // );
 
     // Recipients
     $mail->setFrom('info@matesnco.com', 'Matesnco Web-Enquiry');
