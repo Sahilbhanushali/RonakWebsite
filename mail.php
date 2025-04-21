@@ -1,58 +1,70 @@
 <?php
-header('Content-Type: application/json');
+header('Content-Type: text/plain');
 
-// Security checks
-if ($_SERVER['REQUEST_METHOD'] !== 'POST' || empty($_SERVER['HTTP_X_REQUESTED_WITH']) || strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
-    http_response_code(403);
-    echo json_encode(['success' => false, 'message' => 'Forbidden - Direct access not allowed']);
-    exit;
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'assets/mailer/PHPMailer-master/src/Exception.php';
+require 'assets/mailer/PHPMailer-master/src/PHPMailer.php';
+require 'assets/mailer/PHPMailer-master/src/SMTP.php';
+
+// Input sanitization and validation
+$name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
+$email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
+$phone = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_STRING);
+$notes = filter_input(INPUT_POST, 'notes', FILTER_SANITIZE_STRING);
+
+// Validation
+if (empty($name) || empty($email) || empty($phone) || empty($notes)) {
+    die('All fields are required');
 }
 
-// Validate required fields
-$required = ['name', 'email'];
-foreach ($required as $field) {
-    if (empty($_POST[$field])) {
-        http_response_code(400);
-        echo json_encode(['success' => false, 'message' => 'Please fill all required fields']);
-        exit;
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    die('Invalid email format');
+}
+
+$mail = new PHPMailer(true);
+
+try {
+    // Server settings
+    $mail->isSMTP();
+    $mail->Host = 'mail.smtp2go.com';
+    $mail->SMTPAuth = true;
+    $mail->Username = 'matesnco.com';
+    $mail->Password = 'Matesnco@123';
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->Port = 587;
+    
+    // SSL/TLS options (temporary fix - see note below)
+    $mail->SMTPOptions = array(
+        'ssl' => array(
+            'verify_peer' => false,
+            'verify_peer_name' => false,
+            'allow_self_signed' => true
+        )
+    );
+
+    // Recipients
+    $mail->setFrom('info@matesnco.com', 'Matesnco Web-Enquiry');
+    $mail->addReplyTo($email, $name);
+    $mail->addAddress('matesncompany@gmail.com
+', 'Matesnco');
+
+    // Content
+    $mail->isHTML(true);
+    $mail->Subject = 'New Contact Form Submission from ' . $name;
+    $mail->Body = "<h3>New Contact Form Submission</h3>
+        <p><strong>Name:</strong> {$name}</p>
+        <p><strong>Email:</strong> {$email}</p>
+        <p><strong>Phone:</strong> {$phone}</p>
+        <p><strong>Message:</strong></p>
+        <p>" . nl2br(htmlspecialchars($notes)) . "</p>";
+
+    if ($mail->send()) {
+        echo 'success';
+    } else {
+        echo 'Mailer Error: ' . $mail->ErrorInfo;
     }
+} catch (Exception $e) {
+    echo 'Exception: ' . $e->getMessage();
 }
-
-// Validate email
-if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-    http_response_code(400);
-    echo json_encode(['success' => false, 'message' => 'Please provide a valid email address']);
-    exit;
-}
-
-// Sanitize inputs
-$name = htmlspecialchars(strip_tags($_POST['name']));
-$email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-$business = isset($_POST['business']) ? htmlspecialchars(strip_tags($_POST['business'])) : 'Not specified';
-
-// Email configuration for Hostinger
-$to = 'your-email@example.com'; // CHANGE THIS TO YOUR ACTUAL EMAIL
-$subject = "New Contact Form Submission: $name";
-$message = "You have received a new contact form submission:\n\n";
-$message .= "Name: $name\n";
-$message .= "Email: $email\n";
-$message .= "Business Type: $business\n";
-
-$headers = "From: $email\r\n";
-$headers .= "Reply-To: $email\r\n";
-$headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
-$headers .= "MIME-Version: 1.0\r\n";
-$headers .= "Content-type: text/plain; charset=UTF-8\r\n";
-
-// For Hostinger, it's better to use their SMTP service
-ini_set('SMTP', 'localhost');
-ini_set('smtp_port', 25);
-
-// Send email
-if (mail($to, $subject, $message, $headers)) {
-    echo json_encode(['success' => true]);
-} else {
-    http_response_code(500);
-    echo json_encode(['success' => false, 'message' => 'Failed to send email. Please try again later.']);
-}
-?>

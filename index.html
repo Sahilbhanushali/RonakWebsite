@@ -134,12 +134,12 @@
                       </div>
                       <p>
                         <a
-                          href="mailto:mates&co@gmail.com"
+                          href="mailto:matesncompany@gmail.com"
                           style="color: white; text-decoration: none"
                           onmouseover="this.style.color='white'"
                           onmouseout="this.style.color='white'"
                         >
-                          Mates&Co@gmail.com
+                          matesncompany@gmail.com
                         </a>
                       </p>
                       <span>Email Us</span>
@@ -192,10 +192,20 @@
               <div class="social">
                 <ul>
                   <li>
-                    <a href="#"><i class="fa fa-whatsapp"></i></a>
+                    <a
+                      href="https://wa.me/918097702034?text=Hi%20I%20have%20an%20enquiry%20with%20MatesnCo"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="fa fa-whatsapp"></i>
+                    </a>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a
+                      href="https://www.instagram.com/matesncompany/?utm_source=qr&igsh=ZXNwMmJuYWc3YjF3#"
+                      target="_blank"
+                      ><i class="fa fa-instagram"></i
+                    ></a>
                   </li>
                   <li>
                     <a href="#"><i class="fa fa-facebook"></i></a>
@@ -233,16 +243,14 @@
         <section class="hero hero-slider-wrapper hero-style-1">
           <div class="hero-slider">
             <div class="slide">
-              <img src="assets/images/banner_1.jpg" alt class="slider-bg" />
+              <img
+                src="assets/images/banner_1.jpg"
+                alt="image-banner"
+                class="slider-bg"
+              />
               <div class="container">
                 <div class="row">
                   <div class="col col-md-8 col-md-offset-2 slide-caption">
-                    <h2>Leader in Business</h2>
-                    <p>
-                      An unknown printer took a galley of type and scrambled it
-                      to make a type specimen book. It has survived not only
-                      five centuries.
-                    </p>
                     <div class="btns">
                       <a
                         style="border-radius: 15px"
@@ -261,12 +269,6 @@
               <div class="container">
                 <div class="row">
                   <div class="col col-md-8 col-md-offset-2 slide-caption">
-                    <h2>Leader in Business</h2>
-                    <p>
-                      An unknown printer took a galley of type and scrambled it
-                      to make a type specimen book. It has survived not only
-                      five centuries.
-                    </p>
                     <div class="btns">
                       <a
                         style="border-radius: 15px"
@@ -285,12 +287,6 @@
               <div class="container">
                 <div class="row">
                   <div class="col col-md-8 col-md-offset-2 slide-caption">
-                    <h2>Leader in Business</h2>
-                    <p>
-                      An unknown printer took a galley of type and scrambled it
-                      to make a type specimen book. It has survived not only
-                      five centuries.
-                    </p>
                     <div class="btns">
                       <a
                         style="border-radius: 15px"
@@ -385,7 +381,7 @@
                 <div data-aos="fade-right" data-aos-duration="2000">
                   <div class="about-video-grid">
                     <div class="img-holder">
-                      <img src="assets/images/about-pic.jpg" alt />
+                      <img src="assets/images/logo.jpg" alt />
                     </div>
                   </div>
                 </div>
@@ -576,23 +572,10 @@
                         id="name"
                         name="name"
                         style="border-radius: 10px"
+                        placeholder="Enter your name"
                       />
                     </div>
-                    <div class="col col-sm-6">
-                      <label for="business">Business Type</label>
-                      <select
-                        name="business"
-                        id="business"
-                        class="form-control"
-                        style="border-radius: 10px"
-                      >
-                        <option selected disabled>-Select-</option>
-                        <option>None</option>
-                        <option>Business type 1</option>
-                        <option>Business type 2</option>
-                        <option>Business type 3</option>
-                      </select>
-                    </div>
+
                     <div class="col col-sm-6">
                       <label for="email">Email Address</label>
                       <input
@@ -601,12 +584,36 @@
                         id="email"
                         name="email"
                         style="border-radius: 10px"
+                        placeholder="Enter your email"
+                      />
+                    </div>
+                    <div class="col col-sm-6">
+                      <label for="phone">Number</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="phone"
+                        name="phone"
+                        style="border-radius: 10px"
+                        placeholder="Enter your number "
                       />
                     </div>
                     <div class="col col-sm-4 submit-btn-wrapper">
                       <button type="submit" style="border-radius: 10px">
                         Submit Now
                       </button>
+                      <div id="loader">
+                        <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
+                      </div>
+                    </div>
+                    <div class="col col-md-12 error-handling-messages-wrapper">
+                      <div class="error-handling-messages">
+                        <div id="success">Thank you</div>
+                        <div id="error">
+                          Error occurred while sending email. Please try again
+                          later.
+                        </div>
+                      </div>
                     </div>
                   </form>
                 </div>
@@ -717,9 +724,10 @@
                     <div data-aos="fade-up-right" data-aos-duration="3000">
                       <div class="grid business insurance">
                         <img
-                          src="assets/images/Housing Finance 3.jpg"
-                          alt
+                          src="assets/images/working_capital_1.jpg"
+                          alt="working capital"
                           class="img img-responsive"
+                          style="height: 250px"
                         />
                         <div class="details">
                           <div class="inner">
@@ -738,9 +746,10 @@
                     <div data-aos="fade-up" data-aos-duration="3000">
                       <div class="grid consulting others">
                         <img
-                          src="assets/images/finance_capital.jpg"
-                          alt
+                          src="assets/images/lease_rental_discounting_1.jpg"
+                          alt="lease rental Discounting image"
                           class="img img-responsive"
+                          style="height: 250px"
                         />
                         <div class="details">
                           <div class="inner">
@@ -760,8 +769,9 @@
                       <div class="grid insurance others business">
                         <img
                           src="assets/images/project_finance_1.jpg"
-                          alt
+                          alt="Project Finance image"
                           class="img img-responsive"
+                          style="height: 250px"
                         />
                         <div class="details">
                           <div class="inner">
@@ -850,8 +860,8 @@
                       </li>
                       <li>
                         <i class="fa fa-envelope"></i>
-                        <a href="mailto:mates&co@gmail.com"
-                          >mates&co@gmail.com</a
+                        <a href="mailto:matesncompany@gmail.com"
+                          >matesncompany@gmail.com</a
                         >
                       </li>
                       <li>
