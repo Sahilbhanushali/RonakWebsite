@@ -7,8 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="themexriver" />
 
-    <!-- Page Title -->
-    <title>Mates and Company Group of Companies</title>
+    <!-- ADDED: SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Mates and Company offers expert financial consulting, home loans, and business financing solutions in India. Get competitive rates today."
+    />
+    <meta
+      name="keywords"
+      content="home loans, business finance, loan against property, Mumbai financial services"
+    />
+
+    <!-- ADDED: Open Graph / Social Media Meta Tags -->
+    <meta
+      property="og:title"
+      content="Mates and Company | Financial & Loan Services"
+    />
+    <meta
+      property="og:description"
+      content="Expert financial solutions for home loans, business financing, and investment advisory services."
+    />
+    <meta
+      property="og:image"
+      content="https://matesnco.com/assets/images/logo.png"
+    />
+    <meta property="og:url" content="https://matesnco.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- ADDED: Canonical URL -->
+    <link rel="canonical" href="https://matesnco.com" />
+
+    <!-- Page Title - IMPROVED -->
+    <title>Home Loans & Business Financing | Mates and Company Mumbai</title>
 
     <!-- Icon fonts -->
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
@@ -30,12 +59,26 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet" />
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- ADDED: Schema Markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FinancialService",
+        "name": "Mates and Company",
+        "url": "https://matesnco.com",
+        "logo": "https://matesnco.com/assets/images/logo.png",
+        "telephone": "+918369251837",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Mumbai",
+          "addressRegion": "MH",
+          "addressCountry": "IN"
+        },
+        "openingHours": "Mo-Fr 09:00-20:00"
+      }
+    </script>
   </head>
 
   <body>
@@ -139,16 +182,6 @@
                 <li class="menu-item">
                   <a href="services.html">Services</a>
                 </li>
-                <!-- <li><a href="projects.html">Projects</a></li> -->
-                <li class="menu-item-has-children">
-                  <!-- <a href="case-studies.html">Case Studies</a> -->
-                  <ul class="sub-menu">
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="partnership.html">Partnership</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                  </ul>
-                </li>
 
                 <li><a href="contact.html">Contact</a></li>
               </ul>
@@ -159,23 +192,34 @@
               <div class="social">
                 <ul>
                   <li>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-whatsapp"></i></a>
                   </li>
                   <li>
                     <a href="#"><i class="fa fa-instagram"></i></a>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"
+                        />
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
-              <div class="header-search-area"></div>
             </div>
           </div>
           <!-- end of container -->
@@ -458,9 +502,10 @@
                       </div>
                       <h3>Housing Finance</h3>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua
+                        A <strong>home loan</strong> is an amount of money that
+                        an individual or company borrows from a bank or
+                        financial institution for the purchase or construction
+                        of property.
                       </p>
                     </div>
                   </div>
@@ -471,9 +516,11 @@
                       </div>
                       <h3>Loan Against Property</h3>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua
+                        A <strong>Loan Against Property (LAP)</strong> allows
+                        you to leverage your residential or commercial
+                        property's value to secure funds for business expansion,
+                        education, medical needs, or other financial
+                        requirements.
                       </p>
                     </div>
                   </div>
@@ -484,9 +531,9 @@
                       </div>
                       <h3>Unsecured Loans</h3>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua
+                        Unsecured loans—sometimes referred to as signature loans
+                        or personal loans—are approved without the use of
+                        property or other assets as collateral.
                       </p>
                     </div>
                   </div>
@@ -517,7 +564,10 @@
             <div class="row">
               <div class="col col-md-8">
                 <div class="contact-form">
-                  <form method="post" class="row">
+                  <form
+                    class="form contact-validation-active"
+                    id="contact-form"
+                  >
                     <div class="col col-sm-6">
                       <label for="name">Full Name</label>
                       <input
@@ -599,25 +649,6 @@
 
             <div class="row">
               <div class="col col-xs-12 sortable-gallery">
-                <!-- <div class="gallery-filters">
-                  <ul>
-                    <li><a data-filter="*" href="#" class="current">All</a></li>
-                    <li>
-                      <a data-filter=".business" href="#">Housing Finance</a>
-                    </li>
-                    <li>
-                      <a data-filter=".consulting" href="#"
-                        >Loan Against Property</a
-                      >
-                    </li>
-                    <li>
-                      <a data-filter=".insurance" href="#">Unsecured Loans</a>
-                    </li>
-                    <li>
-                      <a data-filter=".others" href="#">Working Capital</a>
-                    </li>
-                  </ul>
-                </div> -->
                 <div data-aos="fade-up" data-aos-duration="2000">
                   <div class="gallery-container">
                     <div data-aos="fade-up-left" data-aos-duration="3000">
@@ -629,6 +660,11 @@
                         />
                         <div class="details">
                           <div class="inner">
+                            <div class="overlay">
+                              <a href="service-single.html"
+                                ><i class="fa fa-link"></i
+                              ></a>
+                            </div>
                             <div class="cat">
                               <span>Housing Finance</span>
                             </div>
@@ -645,6 +681,11 @@
                         />
                         <div class="details">
                           <div class="inner">
+                            <div class="overlay">
+                              <a href="service-single-consulting.html"
+                                ><i class="fa fa-link"></i
+                              ></a>
+                            </div>
                             <div class="cat">
                               <span>Loan against Property</span>
                             </div>
@@ -661,6 +702,11 @@
                         />
                         <div class="details">
                           <div class="inner">
+                            <div class="overlay">
+                              <a href="service-single-market-research.html"
+                                ><i class="fa fa-link"></i
+                              ></a>
+                            </div>
                             <div class="cat">
                               <span>Unsecured Loans</span>
                             </div>
@@ -677,8 +723,13 @@
                         />
                         <div class="details">
                           <div class="inner">
+                            <div class="overlay">
+                              <a href="service-single-venture.html"
+                                ><i class="fa fa-link"></i
+                              ></a>
+                            </div>
                             <div class="cat">
-                              <span>Working Capitals</span>
+                              <span>Working Capital</span>
                             </div>
                           </div>
                         </div>
@@ -693,8 +744,13 @@
                         />
                         <div class="details">
                           <div class="inner">
+                            <div class="overlay">
+                              <a href="service-single-startup.html"
+                                ><i class="fa fa-link"></i
+                              ></a>
+                            </div>
                             <div class="cat">
-                              <span>Other Loans</span>
+                              <span>Lease Rental Discounting</span>
                             </div>
                           </div>
                         </div>
@@ -703,14 +759,19 @@
                     <div data-aos="fade-up-left" data-aos-duration="3000">
                       <div class="grid insurance others business">
                         <img
-                          src="assets/images/unsecured_loan.jpg"
+                          src="assets/images/project_finance_1.jpg"
                           alt
                           class="img img-responsive"
                         />
                         <div class="details">
                           <div class="inner">
+                            <div class="overlay">
+                              <a href="service-single-project-finance.html"
+                                ><i class="fa fa-link"></i
+                              ></a>
+                            </div>
                             <div class="cat">
-                              <span>Insurance</span>
+                              <span>Project Finance</span>
                             </div>
                           </div>
                         </div>
@@ -723,9 +784,7 @@
 
             <div class="row">
               <div class="col col-xs-12">
-                <div class="all-projects">
-                  <!-- <a href="#">Click here to view our <span>All Projects</span></a> -->
-                </div>
+                <div class="all-projects"></div>
               </div>
             </div>
           </div>
@@ -803,31 +862,7 @@
                   </div>
                 </div>
 
-                <div class="col col-md-3 col-sm-6">
-                  <!-- <div class="widget recent-post-widget">
-                  <h3>Recent Posts</h3>
-                  <ul>
-                    <li>
-                      <div class="entry-details">
-                        <h4>
-                          <a href="#">MOCRA Exhibit Restores Art to Life</a>
-                        </h4>
-                        <span class="date">5 hours ago</span>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="entry-details">
-                        <h4>
-                          <a href="#"
-                            >Inside the Winter Inn at College Church</a
-                          >
-                        </h4>
-                        <span class="date">5 hours ago</span>
-                      </div>
-                    </li>
-                  </ul>
-                </div> -->
-                </div>
+                <div class="col col-md-3 col-sm-6"></div>
 
                 <div class="col col-md-3 col-sm-6">
                   <div class="widget quick-links-widget">
@@ -836,12 +871,11 @@
                       <li><a href="index.html">Home</a></li>
                       <li><a href="about.html">About</a></li>
                       <li><a href="services.html">Service</a></li>
-                      <!-- <li><a href="case-studies.html">Case Studies</a></li> -->
                     </ul>
                     <ul>
                       <li><a href="#">Testimonials</a></li>
                       <li><a href="#">Gallery</a></li>
-                      <!-- <li><a href="#">Case Studies</a></li> -->
+
                       <li><a href="contact.html">Contact Us</a></li>
                       <li><a href="#">Privacy Policy</a></li>
                     </ul>
@@ -855,20 +889,7 @@
                       Get latest updates and offers. Subscribe your Email for
                       weekly Newsletter and business tips
                     </p>
-                    <div class="newsletter-form">
-                      <!-- <form>
-                        <div>
-                          <input
-                            type="email"
-                            class="form-control"
-                            placeholder="Your email.."
-                          />
-                          <button type="submit">
-                            <i class="fa fa-envelope"></i>
-                          </button>
-                        </div>
-                      </form> -->
-                    </div>
+                    <div class="newsletter-form"></div>
                   </div>
                 </div>
               </div>
@@ -905,6 +926,7 @@
 
     <!-- Custom script for this template -->
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/form-handler.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

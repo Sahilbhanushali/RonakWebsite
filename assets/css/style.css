@@ -7838,6 +7838,11 @@ img {
     padding: 8px 12px;
   }
 }
+@media (max-width: 767px) {
+  .service-single-content .service-single-tab .nav a:nth-of-type(3) {
+    margin: 10px 0 0 0;
+  }
+}
 
 .service-single-content .service-single-tab .nav .active a,
 .service-single-content .service-single-tab .nav a:hover {

@@ -647,50 +647,50 @@
   /*------------------------------------------
         = CONTACT FORM SUBMISSION
     -------------------------------------------*/
-  if ($("#contact-form").length) {
-    $("#contact-form").validate({
-      rules: {
-        name: {
-          required: true,
-          minlength: 2,
-        },
+  // if ($("#contact-form").length) {
+  //   $("#contact-form").validate({
+  //     rules: {
+  //       name: {
+  //         required: true,
+  //         minlength: 2,
+  //       },
 
-        email: "required",
+  //       email: "required",
 
-        phone: "required",
-      },
+  //       phone: "required",
+  //     },
 
-      messages: {
-        name: "Please enter your name",
-        email: "Please enter your email",
-        phone: "Please enter your phone",
-      },
+  //     messages: {
+  //       name: "Please enter your name",
+  //       email: "Please enter your email",
+  //       phone: "Please enter your phone",
+  //     },
 
-      submitHandler: function (form) {
-        $.ajax({
-          type: "POST",
-          url: "mail.php",
-          data: $(form).serialize(),
-          success: function () {
-            $("#loader").hide();
-            $("#success").slideDown("slow");
-            setTimeout(function () {
-              $("#success").slideUp("slow");
-            }, 3000);
-            form.reset();
-          },
-          error: function () {
-            $("#loader").hide();
-            $("#error").slideDown("slow");
-            setTimeout(function () {
-              $("#error").slideUp("slow");
-            }, 3000);
-          },
-        });
-        return false; // required to block normal submit since you used ajax
-      },
-    });
-  }
+  //     submitHandler: function (form) {
+  //       $.ajax({
+  //         type: "POST",
+  //         url: "mail.php",
+  //         data: $(form).serialize(),
+  //         success: function () {
+  //           $("#loader").hide();
+  //           $("#success").slideDown("slow");
+  //           setTimeout(function () {
+  //             $("#success").slideUp("slow");
+  //           }, 3000);
+  //           form.reset();
+  //         },
+  //         error: function () {
+  //           $("#loader").hide();
+  //           $("#error").slideDown("slow");
+  //           setTimeout(function () {
+  //             $("#error").slideUp("slow");
+  //           }, 3000);
+  //         },
+  //       });
+  //       return false; // required to block normal submit since you used ajax
+  //     },
+  //   });
+  // }
 
   /*==========================================================================
         WHEN DOCUMENT LOADING 
