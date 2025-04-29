@@ -35,7 +35,7 @@ try {
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 587;
     
-    // SSL/TLS options (temporary fix - see note below)
+    // // SSL/TLS options (temporary fix - see note below)
     // $mail->SMTPOptions = array(
     //     'ssl' => array(
     //         'verify_peer' => false,
