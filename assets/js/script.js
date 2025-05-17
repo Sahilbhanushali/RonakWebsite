@@ -104,7 +104,7 @@
         $this.css({
           backgroundImage: "url(" + img + ")",
           backgroundSize: "cover",
-          backgroundPosition: "center center",
+          backgroundPosition: "left center",
         });
       });
     }

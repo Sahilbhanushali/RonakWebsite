@@ -198,7 +198,7 @@
 .owl-carousel .owl-video-tn {
   opacity: 0;
   height: 100%;
-  background-position: center center;
+  background-position: left center;
   background-repeat: no-repeat;
   -webkit-background-size: contain;
   -moz-background-size: contain;
