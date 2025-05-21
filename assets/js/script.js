@@ -89,6 +89,7 @@
           backgroundImage: "url(" + img + ")",
           backgroundPosition: "50%" + positionValue,
           backgroundSize: "cover",
+          width: "1500px",
         });
       });
     }
