@@ -105,7 +105,6 @@
           backgroundImage: "url(" + img + ")",
           backgroundSize: "cover",
           backgroundPosition: "left center",
-          width: "1500px",
         });
       });
     }

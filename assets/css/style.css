@@ -3312,6 +3312,10 @@ img {
   }
 }
 
+.hero-slider .slide {
+  width: 1500px !important;
+}
+
 .hero-style-1 .hero-slider .slide-caption > h2,
 .hero-style-2 .hero-slider .slide-caption > h2,
 .hero-style-3 .hero-slider .slide-caption > h2,
