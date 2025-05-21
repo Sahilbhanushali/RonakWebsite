@@ -89,7 +89,6 @@
           backgroundImage: "url(" + img + ")",
           backgroundPosition: "50%" + positionValue,
           backgroundSize: "cover",
-          width: "1500px",
         });
       });
     }
@@ -106,6 +105,7 @@
           backgroundImage: "url(" + img + ")",
           backgroundSize: "cover",
           backgroundPosition: "left center",
+          width: "1500px",
         });
       });
     }
