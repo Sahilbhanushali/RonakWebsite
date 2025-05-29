@@ -105,6 +105,7 @@
           backgroundImage: "url(" + img + ")",
           backgroundSize: "cover",
           backgroundPosition: "left center",
+          backgroundRepeat: "no-repeat",
         });
       });
     }
@@ -123,6 +124,22 @@
         dots: true,
         fade: true,
         cssEase: "linear",
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: true, // Keep arrows on tablets, adjust as needed
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false, // Hide arrows on mobile
+              dots: true,
+            },
+          },
+        ],
       });
     }
   }

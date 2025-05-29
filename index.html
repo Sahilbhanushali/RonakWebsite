@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Meta Tags -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="themexriver" />
 
-    <!-- ADDED: SEO Meta Tags -->
     <meta
       name="description"
       content="Mates and Company offers expert financial consulting, home loans, and business financing solutions in India. Get competitive rates today."
@@ -17,7 +15,6 @@
       content="home loans, business finance, loan against property, Mumbai financial services"
     />
 
-    <!-- ADDED: Open Graph / Social Media Meta Tags -->
     <meta
       property="og:title"
       content="Mates and Company | Financial & Loan Services"
@@ -33,21 +30,16 @@
     <meta property="og:url" content="https://matesnco.com" />
     <meta property="og:type" content="website" />
 
-    <!-- ADDED: Canonical URL -->
     <link rel="canonical" href="https://matesnco.com" />
 
-    <!-- Page Title - IMPROVED -->
     <title>Home Loans & Business Financing | Mates and Company Mumbai</title>
 
-    <!-- Icon fonts -->
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
     <link href="assets/css/flaticon.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="assets/images/logo.png" />
 
-    <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Plugins for this template -->
     <link href="assets/css/animate.css" rel="stylesheet" />
     <link href="assets/css/owl.carousel.css" rel="stylesheet" />
     <link href="assets/css/owl.theme.css" rel="stylesheet" />
@@ -56,12 +48,10 @@
     <link href="assets/css/owl.transitions.css" rel="stylesheet" />
     <link href="assets/css/jquery.fancybox.css" rel="stylesheet" />
 
-    <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet" />
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <!-- ADDED: Schema Markup -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -79,12 +69,102 @@
         "openingHours": "Mo-Fr 09:00-20:00"
       }
     </script>
+
+    <style>
+      .xai-carousel-container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .xai-carousel {
+        display: flex;
+        width: 100%;
+        height: 700px;
+        transition: transform 1s ease-in-out;
+      }
+
+      .xai-carousel-slide {
+        flex: 0 0 100%;
+        width: 100%;
+      }
+
+      .xai-carousel-image {
+        width: 100%;
+        height: 100%;
+        /* object-fit: contain; */
+        display: block;
+      }
+
+      .xai-carousel-prev,
+      .xai-carousel-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 18px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s;
+      }
+
+      .xai-carousel-prev:hover,
+      .xai-carousel-next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      .xai-carousel-prev {
+        left: 10px;
+      }
+
+      .xai-carousel-next {
+        right: 10px;
+      }
+
+      @media (max-width: 768px) {
+        .xai-carousel-container {
+          padding: 0;
+        }
+
+        .xai-carousel {
+          height: 400px;
+        }
+
+        .xai-carousel-prev,
+        .xai-carousel-next {
+          width: 30px;
+          height: 30px;
+          font-size: 14px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .xai-carousel {
+          height: 250px;
+        }
+
+        .xai-carousel-prev,
+        .xai-carousel-next {
+          width: 25px;
+          height: 25px;
+          font-size: 12px;
+        }
+      }
+    </style>
   </head>
 
   <body>
-    <!-- start page-wrapper -->
     <div class="page-wrapper">
-      <!-- start preloader -->
       <div class="preloader">
         <div class="inner">
           <span></span>
@@ -94,9 +174,7 @@
           <span></span>
         </div>
       </div>
-      <!-- end preloader -->
 
-      <!-- Start header -->
       <header class="site-header header-style-1">
         <div class="topbar">
           <div data-aos="fade-up" data-aos-duration="2000">
@@ -157,7 +235,6 @@
             </div>
           </div>
         </div>
-        <!-- end topbar -->
 
         <nav class="navigation navbar navbar-default">
           <div class="container">
@@ -186,7 +263,6 @@
                 <li><a href="contact.html">Contact</a></li>
               </ul>
             </div>
-            <!-- end of nav-collapse -->
 
             <div class="search-social">
               <div class="social">
@@ -211,7 +287,11 @@
                     <a href="#"><i class="fa fa-facebook"></i></a>
                   </li>
                   <li>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a
+                      href="https://www.linkedin.com/in/mates-and-company-091a92349?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                      target="_blank"
+                      ><i class="fa fa-linkedin"></i
+                    ></a>
                   </li>
                   <li>
                     <a href="#">
@@ -232,87 +312,41 @@
               </div>
             </div>
           </div>
-          <!-- end of container -->
         </nav>
       </header>
-      <!-- end of header -->
-
-      <!-- start of hero -->
 
       <div data-aos="fade-up" data-aos-duration="2000">
-        <section class="hero hero-slider-wrapper hero-style-1">
-          <div class="hero-slider">
-            <div class="slide">
+        <div class="xai-carousel-container">
+          <div class="xai-carousel">
+            <div class="xai-carousel-slide">
               <img
                 src="assets/images/WebSite_Images-01.webp"
-                alt="image-banner"
-                class="slider-bg"
+                alt="Slide 1"
+                class="xai-carousel-image"
               />
-              <div class="container">
-                <div class="row">
-                  <div class="col col-md-8 col-md-offset-2 slide-caption">
-                    <div class="btns">
-                      <a
-                        style="border-radius: 15px"
-                        href="contact.html"
-                        class="theme-btn"
-                        >Contact Us</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-
-            <div class="slide">
+            <div class="xai-carousel-slide">
               <img
                 src="assets/images/WebSite_Images-02.webp"
-                alt
-                class="slider-bg"
+                alt="Slide 2"
+                class="xai-carousel-image"
               />
-              <div class="container">
-                <div class="row">
-                  <div class="col col-md-8 col-md-offset-2 slide-caption">
-                    <div class="btns">
-                      <a
-                        style="border-radius: 15px"
-                        href="contact.html"
-                        class="theme-btn"
-                        >Contact Us</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-
-            <div class="slide">
+            <div class="xai-carousel-slide">
               <img
                 src="assets/images/WebSite_Images-03.webp"
-                alt
-                class="slider-bg"
+                alt="Slide 3"
+                class="xai-carousel-image"
               />
-              <div class="container">
-                <div class="row">
-                  <div class="col col-md-8 col-md-offset-2 slide-caption">
-                    <div class="btns">
-                      <a
-                        style="border-radius: 15px"
-                        href="contact.html"
-                        class="theme-btn"
-                        >Contact Us</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
-        </section>
+          <button class="xai-carousel-prev" aria-label="Previous Slide">
+            ❮
+          </button>
+          <button class="xai-carousel-next" aria-label="Next Slide">❯</button>
+        </div>
       </div>
-      <!-- end of hero slider -->
 
-      <!-- start services-section -->
       <div data-aos="fade-up">
         <section class="services-section section-padding">
           <div class="container">
@@ -365,8 +399,8 @@
                       </div>
                       <h3>Loan Against Property</h3>
                       <p style="text-align: left">
-                        We offer dependable, on-time transportation services,
-                        with a robust network covering domestic and cross-border
+                        We offer dependable, on time transportation services,
+                        with a robust network covering domestic and cross border
                         deliveries..
                       </p>
                     </div>
@@ -375,12 +409,9 @@
               </div>
             </div>
           </div>
-          <!-- end container -->
         </section>
       </div>
-      <!-- end services-section -->
 
-      <!-- start about-section -->
       <div data-aos="fade-up" data-aos-duration="2000">
         <section class="about-section section-padding">
           <div class="container">
@@ -407,19 +438,18 @@
                 <div data-aos="fade-up" data-aos-duration="2000">
                   <div class="about-text">
                     <p>
-                      Industry Expertise – A team of professionals with deep
+                      Industry Expertise : A team of professionals with deep
                       knowledge across finance, logistics, and trade <br />
-                      Integrated Services – End-to-end solutions under one
+                      Integrated Services : End to end solutions under one
                       trusted brand.
                       <br />
-                      Client-Centric Approach – Transparent, ethical practices
-                      focused on long-term relationships.<br />
-                      Global Reach – Strong network across domestic and
+                      Client-Centric Approach : Transparent, ethical practices
+                      focused on long term relationships.<br />
+                      Global Reach : Strong network across domestic and
                       internationally<br />
-                      Tech-Enabled Processes – Modern tools and systems for
+                      Tech-Enabled Processes : Modern tools and systems for
                       efficient service delivery.
                     </p>
-                    <!-- <a href="#" class="theme-btn-s2">Read More</a> -->
                   </div>
                 </div>
               </div>
@@ -472,12 +502,9 @@
               </div>
             </div>
           </div>
-          <!-- end container -->
         </section>
       </div>
-      <!-- end about-section -->
 
-      <!-- start industry-section -->
       <div data-aos="fade-up" data-aos-duration="2000">
         <section class="industry-section section-padding">
           <div class="container">
@@ -535,8 +562,8 @@
                       </div>
                       <h3>Unsecured Loans</h3>
                       <p>
-                        Unsecured loans—sometimes referred to as signature loans
-                        or personal loans—are approved without the use of
+                        Unsecured loans sometimes referred to as signature loans
+                        or personal loans are approved without the use of
                         property or other assets as collateral.
                       </p>
                     </div>
@@ -556,12 +583,9 @@
               </div>
             </div>
           </div>
-          <!-- end container -->
         </section>
       </div>
-      <!-- end industry-section -->
 
-      <!-- start contact-section -->
       <div data-aos="fade-up" data-aos-duration="2000">
         <section class="contact-section">
           <div class="container">
@@ -638,12 +662,9 @@
               </div>
             </div>
           </div>
-          <!-- end container -->
         </section>
       </div>
-      <!-- end contact-section -->
 
-      <!-- start projects-section -->
       <div data-aos="fade-up" data-aos-duration="4000">
         <section class="projects-section section-padding">
           <div class="container">
@@ -806,16 +827,9 @@
               </div>
             </div>
           </div>
-          <!-- end container -->
         </section>
       </div>
-      <!-- end projects-section -->
 
-      <!-- start team-section -->
-
-      <!-- end team-section -->
-
-      <!-- start cta-section -->
       <div data-aos="fade-up" data-aos-duration="2000">
         <section class="cta-section">
           <div class="container">
@@ -827,25 +841,13 @@
                     <span style="color: gold">Perfect Finance company</span> You
                     need
                   </h2>
-                  <!-- <a href="#" class="theme-btn-s3">Start Your Project Now</a> -->
                 </div>
               </div>
             </div>
           </div>
-          <!-- end container -->
         </section>
       </div>
-      <!-- end cta-section -->
 
-      <!-- start latest-blog-section -->
-
-      <!-- end latest-blog-section -->
-
-      <!-- start partners-section -->
-
-      <!-- end partners-section -->
-
-      <!-- start site-footer -->
       <div data-aos="fade-up" data-aos-duration="2000">
         <footer class="site-footer">
           <div class="upper-footer">
@@ -913,7 +915,7 @@
               </div>
             </div>
           </div>
-          <!-- end upper-footer -->
+
           <div class="copyright-info">
             <div class="container">
               <p>
@@ -930,24 +932,68 @@
           </div>
         </footer>
       </div>
-      <!-- end site-footer -->
     </div>
-    <!-- end of page-wrapper -->
 
-    <!-- All JavaScript files
-    ================================================== -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
 
-    <!-- Plugins for this template -->
     <script src="assets/js/jquery-plugin-collection.js"></script>
 
-    <!-- Custom script for this template -->
     <script src="assets/js/script.js"></script>
     <script src="assets/js/form-handler.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      const carousel = document.querySelector(".xai-carousel");
+      const slides = document.querySelectorAll(".xai-carousel-slide");
+      const prevButton = document.querySelector(".xai-carousel-prev");
+      const nextButton = document.querySelector(".xai-carousel-next");
+      let currentIndex = 0;
+      let autoSlideInterval;
+
+      function updateCarousel() {
+        const offset = -currentIndex * 100;
+        carousel.style.transform = `translateX(${offset}%)`;
+      }
+
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateCarousel();
+      }
+
+      function prevSlide() {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        updateCarousel();
+      }
+
+      function startAutoSlide() {
+        autoSlideInterval = setInterval(nextSlide, 4000);
+      }
+
+      function stopAutoSlide() {
+        clearInterval(autoSlideInterval);
+      }
+
+      nextButton.addEventListener("click", () => {
+        stopAutoSlide();
+        nextSlide();
+        startAutoSlide();
+      });
+
+      prevButton.addEventListener("click", () => {
+        stopAutoSlide();
+        prevSlide();
+        startAutoSlide();
+      });
+
+      startAutoSlide();
+
+      carousel.addEventListener("mouseenter", stopAutoSlide);
+      carousel.addEventListener("mouseleave", startAutoSlide);
+
+      updateCarousel();
     </script>
   </body>
 </html>
