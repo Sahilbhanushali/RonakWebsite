@@ -1,0 +1,4 @@
+User-agent: * Allow: / Allow: /index.html Allow: /about.html Allow: /contact.html Disallow: /admin/ Disallow: /private/ Disallow: /wp-admin/
+
+Sitemap: https://matesnco.com/sitemap.xml
+
